@@ -1,0 +1,2205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweets Area | حلاوتك المفضلة في كل لقمة</title>
+  <meta name="description" content="Sweets Area - مطعم حلويات متخصص في الميني بان كيك والوافل بصوصات الشوكولاتة اللذيذة. يومياً من 4 مساءً حتى 1 صباحاً في شبرا مصر." />
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" href="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/485888488_122154354674446895_8888565562348049308_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF3qyPZixcVLfBKPPKdDNntXdrupThXxWZd2u6lOFfFZoyfU8jTy2Zsx4ImHhMZ_7Y6O8-ummB1nfga7abjqOVk&_nc_ohc=KEp_4V-C_nQQ7kNvwHsPt2y&_nc_oc=AdovlhBse5a7euwMnwV_obOmWBmmD2CyyYiSY3Xb-tp-JkUvOAK6gTeSJJRES9pfoA0&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=znd5hcFnvLBAQ2_520xxWA&_nc_ss=7b2a8&oh=00_AQGtgrIWbm8TilRO6mRvzvtsRspOA19I-ahLrfM525Izww&oe=6A743AB2" />
+  <link rel="apple-touch-icon" href="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/485888488_122154354674446895_8888565562348049308_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF3qyPZixcVLfBKPPKdDNntXdrupThXxWZd2u6lOFfFZoyfU8jTy2Zsx4ImHhMZ_7Y6O8-ummB1nfga7abjqOVk&_nc_ohc=KEp_4V-C_nQQ7kNvwHsPt2y&_nc_oc=AdovlhBse5a7euwMnwV_obOmWBmmD2CyyYiSY3Xb-tp-JkUvOAK6gTeSJJRES9pfoA0&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=znd5hcFnvLBAQ2_520xxWA&_nc_ss=7b2a8&oh=00_AQGtgrIWbm8TilRO6mRvzvtsRspOA19I-ahLrfM525Izww&oe=6A743AB2" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sweets Area | حلاوتك المفضلة في كل لقمة" />
+  <meta property="og:description" content="ميني بان كيك، وافل، شوكولاتة وصوصات غنية بطعم يخليك ترجع كل مرة. اطلب الآن عبر واتساب أو الهاتف." />
+  <meta property="og:image" content="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/485888488_122154354674446895_8888565562348049308_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF3qyPZixcVLfBKPPKdDNntXdrupThXxWZd2u6lOFfFZoyfU8jTy2Zsx4ImHhMZ_7Y6O8-ummB1nfga7abjqOVk&_nc_ohc=KEp_4V-C_nQQ7kNvwHsPt2y&_nc_oc=AdovlhBse5a7euwMnwV_obOmWBmmD2CyyYiSY3Xb-tp-JkUvOAK6gTeSJJRES9pfoA0&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=znd5hcFnvLBAQ2_520xxWA&_nc_ss=7b2a8&oh=00_AQGtgrIWbm8TilRO6mRvzvtsRspOA19I-ahLrfM525Izww&oe=6A743AB2" />
+  <meta property="og:type" content="restaurant" />
+
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    /* ==========================================================================
+       1. CSS VARIABLES & THEME SETTINGS
+       ========================================================================== */
+    :root {
+      --bg-cream: #FAF6F0;
+      --bg-cream-light: #FFFBF7;
+      --bg-cream-card: #FFFFFF;
+      --choc-dark: #2B1810;
+      --choc-medium: #4A2E23;
+      --choc-light: #704535;
+      --pink-strawberry: #E8838B;
+      --pink-light: #FDE8EA;
+      --gold-accent: #D4AF37;
+      --gold-light: #F4E8C1;
+      --text-main: #2B1810;
+      --text-muted: #6B554D;
+      --whatsapp-green: #25D366;
+      --whatsapp-dark: #1EBE5D;
+      --shadow-sm: 0 4px 12px rgba(43, 24, 16, 0.05);
+      --shadow-md: 0 8px 24px rgba(43, 24, 16, 0.08);
+      --shadow-lg: 0 16px 32px rgba(43, 24, 16, 0.12);
+      --border-radius: 20px;
+      --border-radius-sm: 12px;
+      --transition-smooth: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Cairo', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-cream);
+      color: var(--text-main);
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+
+    /* Accessibility Focus */
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+      outline: 3px solid var(--gold-accent);
+      outline-offset: 2px;
+    }
+
+    /* Reduce motion for accessibility */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* ==========================================================================
+       2. REUSABLE UTILITIES & SCROLL REVEAL
+       ========================================================================== */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--choc-dark);
+      margin-bottom: 0.5rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gold-accent), var(--pink-strawberry));
+      border-radius: 4px;
+    }
+
+    .section-title p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 1rem auto 0;
+    }
+
+    /* Scroll Reveal Classes */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: var(--transition-smooth);
+    }
+
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       3. HEADER & NAVIGATION (GLASSMORPHISM)
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(250, 246, 240, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+      transition: var(--transition-smooth);
+    }
+
+    .header.scrolled {
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 85px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--gold-accent);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-smooth);
+    }
+
+    .brand:hover .brand-logo {
+      transform: scale(1.05) rotate(5deg);
+    }
+
+    .brand-name {
+      font-size: 1.6rem;
+      font-weight: 900;
+      color: var(--choc-dark);
+      letter-spacing: -0.5px;
+    }
+
+    .brand-name span {
+      color: var(--gold-accent);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--choc-dark);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.05rem;
+      position: relative;
+      transition: var(--transition-smooth);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      right: 0;
+      width: 0;
+      height: 2px;
+      background: var(--pink-strawberry);
+      transition: var(--transition-smooth);
+    }
+
+    .nav-link:hover {
+      color: var(--pink-strawberry);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--choc-dark), var(--choc-medium));
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, var(--choc-medium), var(--choc-light));
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      color: #fff;
+    }
+
+    .btn-secondary {
+      background: var(--pink-strawberry);
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      background: #df6e77;
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+      color: #fff;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--choc-dark);
+      border: 2px solid var(--choc-dark);
+    }
+
+    .btn-outline:hover {
+      background: var(--choc-dark);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .lang-toggle {
+      background: var(--gold-light);
+      color: var(--choc-dark);
+      border: 1px solid var(--gold-accent);
+      padding: 8px 14px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .lang-toggle:hover {
+      background: var(--gold-accent);
+      color: #fff;
+    }
+
+    /* Mobile Hamburger Button */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      color: var(--choc-dark);
+      cursor: pointer;
+    }
+
+    /* Mobile Sidebar */
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1001;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition-smooth);
+    }
+
+    .mobile-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      right: -320px;
+      width: 300px;
+      height: 100vh;
+      background: var(--bg-cream-light);
+      z-index: 1002;
+      padding: 30px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+      transition: var(--transition-smooth);
+    }
+
+    .mobile-menu.open {
+      right: 0;
+    }
+
+    .mobile-menu-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(43, 24, 16, 0.1);
+      padding-bottom: 16px;
+    }
+
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--choc-dark);
+      cursor: pointer;
+    }
+
+    .mobile-nav-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .mobile-nav-links a {
+      color: var(--choc-dark);
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 700;
+      display: block;
+      padding: 8px 0;
+    }
+
+    /* ==========================================================================
+       4. HERO SECTION
+       ========================================================================== */
+    .hero {
+      position: relative;
+      padding: 80px 0 100px;
+      overflow: hidden;
+      background: radial-gradient(circle at 10% 20%, var(--pink-light) 0%, transparent 40%),
+                  radial-gradient(circle at 90% 80%, var(--gold-light) 0%, transparent 40%);
+    }
+
+    .hero-container {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--choc-dark);
+      color: var(--gold-light);
+      padding: 8px 18px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .hero-badge i {
+      color: var(--gold-accent);
+    }
+
+    .hero-title {
+      font-size: 3.8rem;
+      font-weight: 900;
+      line-height: 1.25;
+      color: var(--choc-dark);
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: var(--pink-strawberry);
+      position: relative;
+      display: inline-block;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      margin-bottom: 35px;
+      max-width: 540px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-img-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 480px;
+      aspect-ratio: 1;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 8px solid var(--bg-cream-card);
+      animation: morphShape 8s ease-in-out infinite;
+    }
+
+    @keyframes morphShape {
+      0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+      50% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .floating-card {
+      position: absolute;
+      background: var(--bg-cream-card);
+      padding: 14px 20px;
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      z-index: 2;
+    }
+
+    .floating-card.card-1 {
+      bottom: 20px;
+      right: -10px;
+      animation: floatUp 4s ease-in-out infinite alternate;
+    }
+
+    .floating-card.card-2 {
+      top: 30px;
+      left: 0;
+      animation: floatUp 5s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes floatUp {
+      from { transform: translateY(0); }
+      to { transform: translateY(-12px); }
+    }
+
+    .floating-card-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: var(--pink-light);
+      color: var(--pink-strawberry);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+    }
+
+    .floating-card-text h4 {
+      font-size: 0.95rem;
+      color: var(--choc-dark);
+      font-weight: 800;
+    }
+
+    .floating-card-text p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       5. FEATURES SECTION
+       ========================================================================== */
+    .features {
+      padding: 70px 0;
+      background-color: var(--bg-cream-light);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 28px;
+    }
+
+    .feature-card {
+      background: var(--bg-cream-card);
+      padding: 35px 24px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      transition: var(--transition-smooth);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--pink-strawberry);
+    }
+
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: var(--pink-light);
+      color: var(--pink-strawberry);
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      transition: var(--transition-smooth);
+    }
+
+    .feature-card:hover .feature-icon {
+      background: var(--pink-strawberry);
+      color: #fff;
+      transform: scale(1.1);
+    }
+
+    .feature-card h3 {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--choc-dark);
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* ==========================================================================
+       6. MENU SECTION (INTERACTIVE TABS & CARDS)
+       ========================================================================== */
+    .menu-section {
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .menu-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .tab-btn {
+      padding: 14px 32px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      background: var(--bg-cream-card);
+      color: var(--choc-dark);
+      border: 2px solid rgba(43, 24, 16, 0.1);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .tab-btn:hover {
+      border-color: var(--pink-strawberry);
+    }
+
+    .tab-btn.active {
+      background: var(--choc-dark);
+      color: #fff;
+      border-color: var(--choc-dark);
+      box-shadow: var(--shadow-md);
+    }
+
+    .menu-content {
+      display: none;
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    .menu-content.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Menu Cards Grid (Mini Pancake) */
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 28px;
+    }
+
+    .menu-card {
+      background: var(--bg-cream-card);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(43, 24, 16, 0.06);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-smooth);
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .menu-card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+
+    .menu-card:hover .menu-card-img {
+      transform: scale(1.05);
+    }
+
+    .menu-card-body {
+      padding: 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .menu-card-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--choc-dark);
+      margin-bottom: 6px;
+    }
+
+    .menu-card-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    .menu-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px dashed rgba(43, 24, 16, 0.1);
+      padding-top: 14px;
+    }
+
+    .price {
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--pink-strawberry);
+    }
+
+    .add-to-cart-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--pink-light);
+      color: var(--pink-strawberry);
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+    }
+
+    .add-to-cart-btn:hover {
+      background: var(--pink-strawberry);
+      color: #fff;
+      transform: rotate(90deg);
+    }
+
+    /* Add-ons Chips (الإضافات) */
+    .addons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 18px;
+    }
+
+    .addon-card {
+      background: var(--bg-cream-card);
+      padding: 18px;
+      border-radius: 16px;
+      border: 2px solid rgba(43, 24, 16, 0.08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .addon-card:hover {
+      border-color: var(--gold-accent);
+      background: var(--gold-light);
+    }
+
+    .addon-info h4 {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: var(--choc-dark);
+    }
+
+    .addon-info span {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--pink-strawberry);
+    }
+
+    /* Waffles Table / Cards */
+    .table-responsive {
+      overflow-x: auto;
+      background: var(--bg-cream-card);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(43, 24, 16, 0.08);
+    }
+
+    .waffle-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: right;
+    }
+
+    .waffle-table th, .waffle-table td {
+      padding: 18px 24px;
+      border-bottom: 1px solid rgba(43, 24, 16, 0.06);
+    }
+
+    .waffle-table th {
+      background: var(--choc-dark);
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.05rem;
+    }
+
+    .waffle-table tr:hover {
+      background-color: var(--pink-light);
+    }
+
+    .waffle-title {
+      font-weight: 800;
+      color: var(--choc-dark);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .badge-bestseller {
+      background: var(--gold-accent);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 30px;
+    }
+
+    .waffle-btn {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+    }
+
+    /* ==========================================================================
+       7. INTERACTIVE CART DRAWER & NOTIFICATION
+       ========================================================================== */
+    .cart-float-btn {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 990;
+      background: var(--choc-dark);
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: var(--shadow-lg);
+      border: 2px solid var(--gold-accent);
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .cart-float-btn:hover {
+      transform: scale(1.1);
+      background: var(--choc-medium);
+    }
+
+    .cart-badge {
+      position: absolute;
+      top: -6px;
+      right: -6px;
+      background: var(--pink-strawberry);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 900;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid #fff;
+    }
+
+    .cart-drawer {
+      position: fixed;
+      top: 0;
+      left: -400px;
+      width: 100%;
+      max-width: 380px;
+      height: 100vh;
+      background: var(--bg-cream-card);
+      z-index: 1010;
+      box-shadow: 10px 0 30px rgba(0,0,0,0.2);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-smooth);
+    }
+
+    .cart-drawer.open {
+      left: 0;
+    }
+
+    .cart-header {
+      padding: 20px;
+      background: var(--choc-dark);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .cart-header h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+
+    .cart-body {
+      padding: 20px;
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .cart-empty {
+      text-align: center;
+      color: var(--text-muted);
+      margin-top: 50px;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(43, 24, 16, 0.08);
+    }
+
+    .cart-item-title {
+      font-weight: 700;
+      color: var(--choc-dark);
+    }
+
+    .cart-item-price {
+      font-weight: 800;
+      color: var(--pink-strawberry);
+    }
+
+    .cart-item-remove {
+      background: none;
+      border: none;
+      color: #ff4d4f;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .cart-footer {
+      padding: 20px;
+      border-top: 1px solid rgba(43, 24, 16, 0.1);
+      background: var(--bg-cream-light);
+    }
+
+    .cart-total {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.25rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+      color: var(--choc-dark);
+    }
+
+    .cart-form input {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1px solid rgba(43, 24, 16, 0.2);
+      border-radius: var(--border-radius-sm);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    .btn-whatsapp-send {
+      width: 100%;
+      background: var(--whatsapp-green);
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .btn-whatsapp-send:hover {
+      background: var(--whatsapp-dark);
+    }
+
+    /* Notification Toast */
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--choc-dark);
+      color: var(--gold-light);
+      padding: 14px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      z-index: 2000;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: var(--transition-smooth);
+      pointer-events: none;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       8. GALLERY & LIGHTBOX ("من مطبخنا")
+       ========================================================================== */
+    .gallery-section {
+      padding: 80px 0;
+      background: var(--bg-cream-light);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition-smooth);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(43, 24, 16, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: var(--transition-smooth);
+    }
+
+    .gallery-overlay i {
+      color: #fff;
+      font-size: 2rem;
+      transform: scale(0.5);
+      transition: var(--transition-smooth);
+    }
+
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-item:hover .gallery-overlay i {
+      transform: scale(1);
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: var(--transition-smooth);
+    }
+
+    .lightbox.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .lightbox-img {
+      max-width: 90%;
+      max-height: 85vh;
+      border-radius: var(--border-radius-sm);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .lightbox-close, .lightbox-prev, .lightbox-next {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.15);
+      color: #fff;
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+    }
+
+    .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover {
+      background: var(--pink-strawberry);
+    }
+
+    .lightbox-close { top: 25px; right: 25px; }
+    .lightbox-prev { top: 50%; right: 25px; transform: translateY(-50%); }
+    .lightbox-next { top: 50%; left: 25px; transform: translateY(-50%); }
+
+    /* ==========================================================================
+       9. CALL TO ACTION (CTA)
+       ========================================================================== */
+    .cta-section {
+      padding: 90px 0;
+      background: linear-gradient(135deg, var(--choc-dark), var(--choc-medium));
+      color: #fff;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section h2 {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: var(--gold-light);
+      margin-bottom: 16px;
+    }
+
+    .cta-section p {
+      font-size: 1.25rem;
+      max-width: 600px;
+      margin: 0 auto 35px;
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    /* ==========================================================================
+       10. CONTACT & INFORMATION SECTION
+       ========================================================================== */
+    .contact-section {
+      padding: 90px 0;
+      background: var(--bg-cream);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    .info-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .info-card {
+      background: var(--bg-cream-card);
+      padding: 24px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      border: 1px solid rgba(43, 24, 16, 0.06);
+    }
+
+    .info-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      background: var(--pink-light);
+      color: var(--pink-strawberry);
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .info-text h4 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--choc-dark);
+      margin-bottom: 4px;
+    }
+
+    .info-text p, .info-text a {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      line-height: 1.6;
+    }
+
+    .info-text a:hover {
+      color: var(--pink-strawberry);
+    }
+
+    .contact-form {
+      background: var(--bg-cream-card);
+      padding: 35px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-md);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+
+    .contact-form h3 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--choc-dark);
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--choc-dark);
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 14px 18px;
+      border: 1px solid rgba(43, 24, 16, 0.15);
+      border-radius: var(--border-radius-sm);
+      font-size: 1rem;
+      background: var(--bg-cream-light);
+      transition: var(--transition-smooth);
+    }
+
+    .form-group input:focus, .form-group textarea:focus {
+      border-color: var(--pink-strawberry);
+      outline: none;
+      background: #fff;
+    }
+
+    .map-container {
+      margin-top: 40px;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      height: 350px;
+    }
+
+    .map-container iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    /* ==========================================================================
+       11. FLOATING WHATSAPP & FOOTER
+       ========================================================================== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 990;
+      background: var(--whatsapp-green);
+      color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: var(--shadow-lg);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    .whatsapp-float:hover {
+      background: var(--whatsapp-dark);
+      transform: scale(1.1);
+      color: #fff;
+    }
+
+    .footer {
+      background: var(--choc-dark);
+      color: #fff;
+      padding: 60px 0 30px;
+      border-top: 4px solid var(--gold-accent);
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand p {
+      color: rgba(255, 255, 255, 0.75);
+      margin: 16px 0;
+    }
+
+    .footer-socials {
+      display: flex;
+      gap: 12px;
+    }
+
+    .footer-social-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    .footer-social-icon:hover {
+      background: var(--pink-strawberry);
+      transform: translateY(-3px);
+    }
+
+    .footer-links h4, .footer-contact h4 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      margin-bottom: 20px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-accent);
+      padding-right: 6px;
+    }
+
+    .footer-contact p {
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.9rem;
+    }
+
+    /* ==========================================================================
+       12. RESPONSIVE MEDIA QUERIES
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .hero-container, .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-title { font-size: 3rem; }
+      .hero-visual { order: -1; }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .header-actions { display: none; }
+      .menu-toggle { display: block; }
+      .hero-title { font-size: 2.3rem; }
+      .section-title h2 { font-size: 2rem; }
+      .waffle-table th, .waffle-table td { padding: 12px 14px; font-size: 0.9rem; }
+      .cart-float-btn { bottom: 95px; } /* Above whatsapp float on mobile */
+    }
+
+    @media (max-width: 480px) {
+      .hero-title { font-size: 1.95rem; }
+      .btn { width: 100%; text-align: center; }
+      .hero-actions { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+     1. HEADER / NAVBAR
+     ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#" class="brand" aria-label="الرئيسية Sweets Area">
+        <img 
+          src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/485888488_122154354674446895_8888565562348049308_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF3qyPZixcVLfBKPPKdDNntXdrupThXxWZd2u6lOFfFZoyfU8jTy2Zsx4ImHhMZ_7Y6O8-ummB1nfga7abjqOVk&_nc_ohc=KEp_4V-C_nQQ7kNvwHsPt2y&_nc_oc=AdovlhBse5a7euwMnwV_obOmWBmmD2CyyYiSY3Xb-tp-JkUvOAK6gTeSJJRES9pfoA0&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=znd5hcFnvLBAQ2_520xxWA&_nc_ss=7b2a8&oh=00_AQGtgrIWbm8TilRO6mRvzvtsRspOA19I-ahLrfM525Izww&oe=6A743AB2" 
+          alt="شعار Sweets Area" 
+          class="brand-logo" 
+        />
+        <span class="brand-name">Sweets <span>Area</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#" class="nav-link">الرئيسية</a></li>
+        <li><a href="#menu" class="nav-link">المنيو</a></li>
+        <li><a href="#gallery" class="nav-link">من مطبخنا</a></li>
+        <li><a href="#features" class="nav-link">لماذا نحن؟</a></li>
+        <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <button class="lang-toggle" id="langToggle" aria-label="تبديل اللغة">English</button>
+        <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> اطلب الآن</a>
+      </div>
+
+      <button class="menu-toggle" id="menuOpenBtn" aria-label="فتح القائمة">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay & Sidebar -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <aside class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <a href="#" class="brand">
+        <img 
+          src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/485888488_122154354674446895_8888565562348049308_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF3qyPZixcVLfBKPPKdDNntXdrupThXxWZd2u6lOFfFZoyfU8jTy2Zsx4ImHhMZ_7Y6O8-ummB1nfga7abjqOVk&_nc_ohc=KEp_4V-C_nQQ7kNvwHsPt2y&_nc_oc=AdovlhBse5a7euwMnwV_obOmWBmmD2CyyYiSY3Xb-tp-JkUvOAK6gTeSJJRES9pfoA0&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=znd5hcFnvLBAQ2_520xxWA&_nc_ss=7b2a8&oh=00_AQGtgrIWbm8TilRO6mRvzvtsRspOA19I-ahLrfM525Izww&oe=6A743AB2" 
+          alt="شعار Sweets Area" 
+          class="brand-logo" 
+        />
+        <span class="brand-name">Sweets <span>Area</span></span>
+      </a>
+      <button class="close-btn" id="menuCloseBtn" aria-label="إغلاق القائمة"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#" class="mobile-link">الرئيسية</a></li>
+      <li><a href="#menu" class="mobile-link">المنيو</a></li>
+      <li><a href="#gallery" class="mobile-link">من مطبخنا</a></li>
+      <li><a href="#features" class="mobile-link">لماذا نحن؟</a></li>
+      <li><a href="#contact" class="mobile-link">تواصل معنا</a></li>
+    </ul>
+
+    <div style="margin-top: auto;">
+      <a href="#menu" class="btn btn-primary" style="width: 100%; margin-bottom: 12px;"><i class="fa-solid fa-utensils"></i> اطلب الآن</a>
+      <button class="lang-toggle" style="width: 100%;">English</button>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+     2. HERO SECTION
+     ========================================================================== -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-content reveal">
+        <div class="hero-badge">
+          <i class="fa-solid fa-clock"></i>
+          <span>يومياً من 4 مساءً حتى 1 صباحاً</span>
+        </div>
+        <h1 class="hero-title">
+          حلاوتك المفضلة <br />
+          <span>في كل لقمة</span>
+        </h1>
+        <p class="hero-subtitle">
+          ميني بان كيك، وافل، شوكولاتة وصوصات غنية بطعم يخليك ترجع كل مرة. محضرة بحب من أفضل المكونات الطازجة.
+        </p>
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-cookie-bite"></i> اكتشف المنيو</a>
+          <a href="https://wa.me/201018177033" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> اطلب عبر واتساب</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-img-wrapper">
+          <img 
+            src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=800" 
+            alt="بان كيك فاخر مع الصوصات الغنية" 
+            class="hero-img" 
+          />
+        </div>
+
+        <div class="floating-card card-1">
+          <div class="floating-card-icon"><i class="fa-solid fa-heart"></i></div>
+          <div class="floating-card-text">
+            <h4>طازج ولذيذ</h4>
+            <p>تحضير فوري لكل طلب</p>
+          </div>
+        </div>
+
+        <div class="floating-card card-2">
+          <div class="floating-card-icon"><i class="fa-solid fa-star"></i></div>
+          <div class="floating-card-text">
+            <h4>الأكثر طلباً</h4>
+            <p>ميني بان كيك نوتيلا ولوتس</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     3. FEATURES SECTION
+     ========================================================================== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>لماذا Sweets Area؟</h2>
+        <p>نقدم لك تجربة حلويات استثنائية تجمع بين الفخامة والطعم الغني في كل لقمة</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>طعم لا يُقاوم</h3>
+          <p>نستخدم مكونات وشوكولاتات مستوردة مختارة بعناية لضمان أقصى لذة.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-fire-burner"></i></div>
+          <h3>تحضير طازج</h3>
+          <p>كل طلب يتم تجهيزه فور وصوله ساخناً وبحب خصيصاً لك.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-motorcycle"></i></div>
+          <h3>توصيل للمنازل</h3>
+          <p>نوصل حلاوتك ساخنة وسريعة لحد باب بيتك في شبرا مصر والمناطق المجاورة.</p>
+        </div>
+
+        <div class="feature-card reveal">
+          <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>تنوع كبير</h3>
+          <p>تشكيلة واسعة من الميني بان كيك والوافل والصوصات الغنية التي تناسب كل الأذواق.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     4. MENU SECTION
+     ========================================================================== -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>منيو Sweets Area</h2>
+        <p>اختار حلاوتك، حدّد الصوص والإضافات، واستمتع بأجمل طعم</p>
+      </div>
+
+      <!-- Menu Tabs -->
+      <div class="menu-tabs reveal">
+        <button class="tab-btn active" data-tab="pancake">ميني بان كيك (10 قطع)</button>
+        <button class="tab-btn" data-tab="addons">الإضافات والصوصات</button>
+        <button class="tab-btn" data-tab="waffle">الوافل (ساندوتش ومفتوح)</button>
+      </div>
+
+      <!-- TAB 1: MINI PANCAKE -->
+      <div class="menu-content active" id="tab-pancake">
+        <div class="menu-grid" id="pancakeGrid">
+          <!-- Dynamic Generated via JS below -->
+        </div>
+      </div>
+
+      <!-- TAB 2: ADD-ONS -->
+      <div class="menu-content" id="tab-addons">
+        <div class="addons-grid" id="addonsGrid">
+          <!-- Dynamic Generated via JS below -->
+        </div>
+      </div>
+
+      <!-- TAB 3: WAFFLES -->
+      <div class="menu-content" id="tab-waffle">
+        <div class="table-responsive">
+          <table class="waffle-table">
+            <thead>
+              <tr>
+                <th>صنف الوافل</th>
+                <th>ساندوتش</th>
+                <th>مفتوح</th>
+                <th>الطلب السريع</th>
+              </tr>
+            </thead>
+            <tbody id="waffleTableBody">
+              <!-- Dynamic Generated via JS below -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     5. GALLERY SECTION ("من مطبخنا")
+     ========================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>صور من مطبخنا</h2>
+        <p>لقطات حقيقية لمنتجاتنا وتجهيزاتنا في Sweets Area</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/702658845_122217030764446895_5642748842733505655_n.jpg?stp=dst-jpg_tt6&cstp=mx752x998&ctp=s752x998&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEE081eXxkDJSpAeQIdhXUaOgKW80Cox7E6ApbzQKjHsUWqirheUwSiQqS-JCG_hWNHCZU1-LVGnjCCoMVZghD6&_nc_ohc=33_rIzo-dNcQ7kNvwFe9Ioa&_nc_oc=AdoTrYMrMdTKMFgu_Jy3qhpLzXjc3ol4VINbIi_5y1G0qDTBRFOw4-7AH5D4zHiqVbg&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=IU6DaDXgMR9ycwizG-RAmw&_nc_ss=7b2a8&oh=00_AQEQ83pycuJTmZeIh_9QMjgloMy9dvAyfj3QFLdw70-Vpg&oe=6A7416A2">
+          <img src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/702658845_122217030764446895_5642748842733505655_n.jpg?stp=dst-jpg_tt6&cstp=mx752x998&ctp=s752x998&_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEE081eXxkDJSpAeQIdhXUaOgKW80Cox7E6ApbzQKjHsUWqirheUwSiQqS-JCG_hWNHCZU1-LVGnjCCoMVZghD6&_nc_ohc=33_rIzo-dNcQ7kNvwFe9Ioa&_nc_oc=AdoTrYMrMdTKMFgu_Jy3qhpLzXjc3ol4VINbIi_5y1G0qDTBRFOw4-7AH5D4zHiqVbg&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=IU6DaDXgMR9ycwizG-RAmw&_nc_ss=7b2a8&oh=00_AQEQ83pycuJTmZeIh_9QMjgloMy9dvAyfj3QFLdw70-Vpg&oe=6A7416A2" alt="صورة من مطبخ Sweets Area 1" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/703260874_122217242318446895_8658456521492952988_n.jpg?stp=dst-jpg_tt6&cstp=mx1204x1600&ctp=s1204x1600&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH1jgAdEeIDh6HWTBW7pugZ341j331If-7fjWPffUh_7qQubavshlQhD5FvsiDB00GOI-jx6HlkFWjQK2xdkLx6&_nc_ohc=dov-5XoF1bMQ7kNvwEG3Mq7&_nc_oc=AdqS-IK4HVA5EuZJCKHykW2B3NEMyi9RDieTeBjmgKQBsweWKt1Yu1V-ZR3e9e2oio&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=bh6P_SNv26vrpiBH55mrFQ&_nc_ss=7b2a8&oh=00_AQEXwpus_ild2f4wPvwLpSVYrdUmA8Q22pSl3bytv_3m6A&oe=6A743BC0">
+          <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/703260874_122217242318446895_8658456521492952988_n.jpg?stp=dst-jpg_tt6&cstp=mx1204x1600&ctp=s1204x1600&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH1jgAdEeIDh6HWTBW7pugZ341j331If-7fjWPffUh_7qQubavshlQhD5FvsiDB00GOI-jx6HlkFWjQK2xdkLx6&_nc_ohc=dov-5XoF1bMQ7kNvwEG3Mq7&_nc_oc=AdqS-IK4HVA5EuZJCKHykW2B3NEMyi9RDieTeBjmgKQBsweWKt1Yu1V-ZR3e9e2oio&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=bh6P_SNv26vrpiBH55mrFQ&_nc_ss=7b2a8&oh=00_AQEXwpus_ild2f4wPvwLpSVYrdUmA8Q22pSl3bytv_3m6A&oe=6A743BC0" alt="صورة من مطبخ Sweets Area 2" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/706101211_122217663068446895_7716897969573086410_n.jpg?stp=dst-jpg_tt6&cstp=mx1542x2048&ctp=s1542x2048&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFeIgW3c-ST-P4eHbqPwf12L6T5bMpJviMvpPlsykm-I3RO9T70Kd7EgH5mOt64azdsQ3SWrMgiKsfUD45oUq-E&_nc_ohc=cJu8cB5bfPkQ7kNvwFBw-ev&_nc_oc=AdpWOtejzyW_IkTZUNjWspMZDnqNkFNB4vpsI2hFP1YxR_gaJRwlfkG3AoNFrmcMql4&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=A9Q8mQgAFy1ReqccayYfWA&_nc_ss=7b2a8&oh=00_AQFOuUBdTOX6jj_9zIy3wV77GtBBtTptX_V1uFnZpdYx1w&oe=6A7413A4">
+          <img src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/706101211_122217663068446895_7716897969573086410_n.jpg?stp=dst-jpg_tt6&cstp=mx1542x2048&ctp=s1542x2048&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFeIgW3c-ST-P4eHbqPwf12L6T5bMpJviMvpPlsykm-I3RO9T70Kd7EgH5mOt64azdsQ3SWrMgiKsfUD45oUq-E&_nc_ohc=cJu8cB5bfPkQ7kNvwFBw-ev&_nc_oc=AdpWOtejzyW_IkTZUNjWspMZDnqNkFNB4vpsI2hFP1YxR_gaJRwlfkG3AoNFrmcMql4&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=A9Q8mQgAFy1ReqccayYfWA&_nc_ss=7b2a8&oh=00_AQFOuUBdTOX6jj_9zIy3wV77GtBBtTptX_V1uFnZpdYx1w&oe=6A7413A4" alt="صورة من مطبخ Sweets Area 3" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/753170100_122223598052446895_5523487728507463116_n.jpg?stp=dst-jpg_tt6&cstp=mx1152x1440&ctp=s1152x1440&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHICnZpXGYN3h708gnptF3J5FcHTkn9lvjkVwdOSf2W-O_Am1nUMgWV5EVHij1CYJDZ6rt2Xutb4y73lG23-nXX&_nc_ohc=32KhtEN3Fm4Q7kNvwFKwnRa&_nc_oc=Adr1NNCyaWw1KMsSm15f9QZR3fa6vZJwCKnhgnR6HeDYEQGQacdGD-7DYhCHbuuYGUo&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=Lpja2lRrDrZIiAyQJAwerA&_nc_ss=7b2a8&oh=00_AQHR0R28r3DUL-IRpTW1Ra8X_9iunbPZEt4tiLLIsrmRgA&oe=6A7448B9">
+          <img src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/753170100_122223598052446895_5523487728507463116_n.jpg?stp=dst-jpg_tt6&cstp=mx1152x1440&ctp=s1152x1440&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHICnZpXGYN3h708gnptF3J5FcHTkn9lvjkVwdOSf2W-O_Am1nUMgWV5EVHij1CYJDZ6rt2Xutb4y73lG23-nXX&_nc_ohc=32KhtEN3Fm4Q7kNvwFKwnRa&_nc_oc=Adr1NNCyaWw1KMsSm15f9QZR3fa6vZJwCKnhgnR6HeDYEQGQacdGD-7DYhCHbuuYGUo&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=Lpja2lRrDrZIiAyQJAwerA&_nc_ss=7b2a8&oh=00_AQHR0R28r3DUL-IRpTW1Ra8X_9iunbPZEt4tiLLIsrmRgA&oe=6A7448B9" alt="صورة من مطبخ Sweets Area 4" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/758793492_122224050248446895_2076400248487932212_n.jpg?stp=dst-jpg_tt6&cstp=mx1204x1600&ctp=s1204x1600&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeExCRDRv64leKNqiiluTHcWuyveW1Ud4fy7K95bVR3h_Bb025ZnOigHJ5DJOflsNn_jLlyp8jwM3qeBBdzxwf86&_nc_ohc=3N4oCqvHMIkQ7kNvwFg37Iq&_nc_oc=Adqu-HFJqisjD3xVFroaTI7knPIS2ihqnmCzfkCVJhxWaI5NMDOVt3RUSvopWc0jhLw&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=tcWaehFcKyQ4eejZNp4xsw&_nc_ss=7b2a8&oh=00_AQGrXVsY_RnVWpnD63h-fahnTYTxdeJz9uN26gVaQ71qpw&oe=6A74286D">
+          <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/758793492_122224050248446895_2076400248487932212_n.jpg?stp=dst-jpg_tt6&cstp=mx1204x1600&ctp=s1204x1600&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeExCRDRv64leKNqiiluTHcWuyveW1Ud4fy7K95bVR3h_Bb025ZnOigHJ5DJOflsNn_jLlyp8jwM3qeBBdzxwf86&_nc_ohc=3N4oCqvHMIkQ7kNvwFg37Iq&_nc_oc=Adqu-HFJqisjD3xVFroaTI7knPIS2ihqnmCzfkCVJhxWaI5NMDOVt3RUSvopWc0jhLw&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=tcWaehFcKyQ4eejZNp4xsw&_nc_ss=7b2a8&oh=00_AQGrXVsY_RnVWpnD63h-fahnTYTxdeJz9uN26gVaQ71qpw&oe=6A74286D" alt="صورة من مطبخ Sweets Area 5" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/470195451_122136346952446895_8663745720228483633_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1373x2048&ctp=s1373x2048&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGSg5MkT-zez8UQCqErcASmWwVjB4lpuT5bBWMHiWm5PtfF0RrloQQthHaS_OgIzShwZmHP5ee3CMcB_L8cT-7T&_nc_ohc=u5SYGWZo5o8Q7kNvwFF5plm&_nc_oc=AdqNPNftgCRAtzFy8le-IF8YzLh2ThlW1RPIGrngN5k43cO29ga4NUluKRYk9gmYgEc&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=6rU6obG75NrlS-YU67UvQA&_nc_ss=7b2a8&oh=00_AQEPTR3WE7oregNO8lAoNwZHi6sDJ7uSJiN2-xMyIkkFkQ&oe=6A742831">
+          <img src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/470195451_122136346952446895_8663745720228483633_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1373x2048&ctp=s1373x2048&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGSg5MkT-zez8UQCqErcASmWwVjB4lpuT5bBWMHiWm5PtfF0RrloQQthHaS_OgIzShwZmHP5ee3CMcB_L8cT-7T&_nc_ohc=u5SYGWZo5o8Q7kNvwFF5plm&_nc_oc=AdqNPNftgCRAtzFy8le-IF8YzLh2ThlW1RPIGrngN5k43cO29ga4NUluKRYk9gmYgEc&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=6rU6obG75NrlS-YU67UvQA&_nc_ss=7b2a8&oh=00_AQEPTR3WE7oregNO8lAoNwZHi6sDJ7uSJiN2-xMyIkkFkQ&oe=6A742831" alt="صورة من مطبخ Sweets Area 6" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/470060707_122136347108446895_7232186912569975598_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1542x2048&ctp=s1542x2048&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF04Vn1G4Fxhom6HN56MCfJ-qOxVCOI2jP6o7FUI4jaMzIu_ySJJm5zjIQTUMF14DKw7uxb4gxer9fV-EnrjriW&_nc_ohc=QlkVptSMKP4Q7kNvwEQhzYp&_nc_oc=Adpyx65_CCDpBLmNnPdmXQe7idHZa9ChkJwO18iWFXL8SW2qpfLOl2tJjWtCoNS8IUg&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=68ktUjlgvnX5yhJcxkX1sQ&_nc_ss=7b2a8&oh=00_AQFakHzr0rm_XlH9WXoY4JMutfo01UfAYxUREEilBmfx3w&oe=6A741EEC">
+          <img src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/470060707_122136347108446895_7232186912569975598_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1542x2048&ctp=s1542x2048&_nc_cat=100&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeF04Vn1G4Fxhom6HN56MCfJ-qOxVCOI2jP6o7FUI4jaMzIu_ySJJm5zjIQTUMF14DKw7uxb4gxer9fV-EnrjriW&_nc_ohc=QlkVptSMKP4Q7kNvwEQhzYp&_nc_oc=Adpyx65_CCDpBLmNnPdmXQe7idHZa9ChkJwO18iWFXL8SW2qpfLOl2tJjWtCoNS8IUg&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=68ktUjlgvnX5yhJcxkX1sQ&_nc_ss=7b2a8&oh=00_AQFakHzr0rm_XlH9WXoY4JMutfo01UfAYxUREEilBmfx3w&oe=6A741EEC" alt="صورة من مطبخ Sweets Area 7" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/470181223_122136347078446895_3675647199157535651_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1542&ctp=s2048x1542&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGI43bDAt1Oa6ELb1qhQTEzalaKy5RKXLVqVorLlEpctf3xv51jTOut8p81zkk6g5PVvFdT9gJisrYEaKwN4enK&_nc_ohc=jXZ_gI3IyPcQ7kNvwHVLKBc&_nc_oc=Adr1KVLO6B_SPzFXXHyO9-6uRUaJDu4_uq2zHiDq5vYHlPm-jPwugIOqSfHXxItd9A0&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=kobjJWwfmM-CIQ0L2WVqyA&_nc_ss=7b2a8&oh=00_AQGIKh2R8MpIxlEvKMlgG1XyP14Nui0EGZ70kCxDJFRDvg&oe=6A7448C2">
+          <img src="https://scontent.fcai19-4.fna.fbcdn.net/v/t39.30808-6/470181223_122136347078446895_3675647199157535651_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2048x1542&ctp=s2048x1542&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGI43bDAt1Oa6ELb1qhQTEzalaKy5RKXLVqVorLlEpctf3xv51jTOut8p81zkk6g5PVvFdT9gJisrYEaKwN4enK&_nc_ohc=jXZ_gI3IyPcQ7kNvwHVLKBc&_nc_oc=Adr1KVLO6B_SPzFXXHyO9-6uRUaJDu4_uq2zHiDq5vYHlPm-jPwugIOqSfHXxItd9A0&_nc_zt=23&_nc_ht=scontent.fcai19-4.fna&_nc_gid=kobjJWwfmM-CIQ0L2WVqyA&_nc_ss=7b2a8&oh=00_AQGIKh2R8MpIxlEvKMlgG1XyP14Nui0EGZ70kCxDJFRDvg&oe=6A7448C2" alt="صورة من مطبخ Sweets Area 8" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+
+        <div class="gallery-item reveal" data-src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/470197606_122136359948446895_282959899440619670_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1542x2048&ctp=s2048x1542&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeED82RlKXWs7BhhJ9HBU6bPrUccJ8FzlamtRxwnwXOVqQu9RI8QjAvdMAgrmI9098HkN5wYvgOD4NxHNUx2xuAT&_nc_ohc=nLWsQk5AO5sQ7kNvwG5iVl9&_nc_oc=AdpJ40HE1O6U3BVSexAWvK20oLZRGo8ABjQJSsEl5A3YbjiHCtfDhy_1qyLvc-i1PR4&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=pXiOwvsYp1cVm6KNwHIaMg&_nc_ss=7b2a8&oh=00_AQHYjM3G0RuSNCmbkfEhFgi5ApNF6HG4UYuCbYaeS7dR1A&oe=6A742EB4">
+          <img src="https://scontent.fcai19-11.fna.fbcdn.net/v/t39.30808-6/470197606_122136359948446895_282959899440619670_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1542x2048&ctp=s2048x1542&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeED82RlKXWs7BhhJ9HBU6bPrUccJ8FzlamtRxwnwXOVqQu9RI8QjAvdMAgrmI9098HkN5wYvgOD4NxHNUx2xuAT&_nc_ohc=nLWsQk5AO5sQ7kNvwG5iVl9&_nc_oc=AdpJ40HE1O6U3BVSexAWvK20oLZRGo8ABjQJSsEl5A3YbjiHCtfDhy_1qyLvc-i1PR4&_nc_zt=23&_nc_ht=scontent.fcai19-11.fna&_nc_gid=pXiOwvsYp1cVm6KNwHIaMg&_nc_ss=7b2a8&oh=00_AQHYjM3G0RuSNCmbkfEhFgi5ApNF6HG4UYuCbYaeS7dR1A&oe=6A742EB4" alt="صورة من مطبخ Sweets Area 9" loading="lazy" class="gallery-img" />
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="إغلاق"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="السابق"><i class="fa-solid fa-chevron-right"></i></button>
+    <img src="" alt="عرض الصورة مكبرة" class="lightbox-img" id="lightboxImg" />
+    <button class="lightbox-next" id="lightboxNext" aria-label="التالي"><i class="fa-solid fa-chevron-left"></i></button>
+  </div>
+
+  <!-- ==========================================================================
+     6. CALL TO ACTION (CTA) SECTION
+     ========================================================================== -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <h2>جاهز تدلع نفسك؟</h2>
+      <p>اختار طلبك الآن، وإحنا نجهزهولك بأجمل طعم يوصلك طازج وساخن لحد عندك.</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/201018177033" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> اطلب عبر واتساب</a>
+        <a href="tel:01018177033" class="btn btn-outline" style="color:#fff; border-color:var(--gold-accent);"><i class="fa-solid fa-phone"></i> اتصل بنا الآن</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     7. CONTACT & LOCATION SECTION
+     ========================================================================== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-title reveal">
+        <h2>تواصل معنا</h2>
+        <p>نحن هنا لخدمتك يومياً ويسعدنا دائماً استقبال طلباتكم واستفساراتكم</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="info-cards-grid reveal">
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="info-text">
+              <h4>مواعيد العمل</h4>
+              <p>العربية شغالة يومياً من الساعة 4 عصراً لـ 1 ليلاً.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="info-text">
+              <h4>العنوان</h4>
+              <p>شارع شبرا الرئيسي بجوار مدرسة التوفيقية وأمام شارع شوكلاني وبنك مصر، شبرا مصر.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-motorcycle"></i></div>
+            <div class="info-text">
+              <h4>خدمة التوصيل</h4>
+              <p>يوجد خدمة توصيل للمنازل سريعة وآمنة 🛵</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div class="info-text">
+              <h4>أرقام الهاتف</h4>
+              <p><a href="tel:01018177033">01018177033</a> | <a href="tel:01110493071">01110493071</a></p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="info-text">
+              <h4>البريد الإلكتروني</h4>
+              <p><a href="mailto:rmano7925@gmail.com">rmano7925@gmail.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal">
+          <h3>أرسل لنا استفسارك</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="contactName">الاسم الكريم</label>
+              <input type="text" id="contactName" placeholder="أدخل اسمك هنا" required />
+            </div>
+            <div class="form-group">
+              <label for="contactPhone">رقم الهاتف أو واتساب</label>
+              <input type="tel" id="contactPhone" placeholder="01XXXXXXXXX" required />
+            </div>
+            <div class="form-group">
+              <label for="contactMessage">رسالتك أو طلبك الخاص</label>
+              <textarea id="contactMessage" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;"><i class="fa-brands fa-whatsapp"></i> إرسال عبر واتساب</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="map-container reveal">
+        <iframe 
+          title="موقع Sweets Area على خريطة جوجل في شبرا مصر" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13812.333333333334!2d31.2461!3d30.0888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840b2b8d5f49d%3A0x8e5c1a1f0a20f9d!2sShobra%2C%20Cairo%2C%20Egypt!5e0!3m2!1sen!2seg!4v1710000000000!5m2!1sen!2seg" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+     8. FOOTER
+     ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="#" class="brand" style="text-decoration:none;">
+            <img 
+              src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/485888488_122154354674446895_8888565562348049308_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF3qyPZixcVLfBKPPKdDNntXdrupThXxWZd2u6lOFfFZoyfU8jTy2Zsx4ImHhMZ_7Y6O8-ummB1nfga7abjqOVk&_nc_ohc=KEp_4V-C_nQQ7kNvwHsPt2y&_nc_oc=AdovlhBse5a7euwMnwV_obOmWBmmD2CyyYiSY3Xb-tp-JkUvOAK6gTeSJJRES9pfoA0&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=znd5hcFnvLBAQ2_520xxWA&_nc_ss=7b2a8&oh=00_AQGtgrIWbm8TilRO6mRvzvtsRspOA19I-ahLrfM525Izww&oe=6A743AB2" 
+              alt="شعار Sweets Area" 
+              class="brand-logo" 
+            />
+            <span class="brand-name" style="color:#fff;">Sweets <span style="color:var(--gold-accent);">Area</span></span>
+          </a>
+          <p>Sweets Area — لأن كل لحظة تستحق حلاوة.</p>
+          <div class="footer-socials">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="تيك توك"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#menu">منيو الحلويات</a></li>
+            <li><a href="#gallery">صور من مطبخنا</a></li>
+            <li><a href="#features">لماذا Sweets Area؟</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>اتصل بنا مباشرة</h4>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:01018177033" style="color:inherit;text-decoration:none;">01018177033</a></p>
+          <p><i class="fa-solid fa-phone"></i> <a href="tel:01110493071" style="color:inherit;text-decoration:none;">01110493071</a></p>
+          <p><i class="fa-solid fa-envelope"></i> <a href="mailto:rmano7925@gmail.com" style="color:inherit;text-decoration:none;">rmano7925@gmail.com</a></p>
+          <p><i class="fa-solid fa-map-pin"></i> شبرا مصر، القاهرة</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sweets Area. جميع الحقوق محفوظة. صُمم بحب لعشاق الحلويات.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+     9. FLOATING BUTTONS, CART DRAWER & NOTIFICATION TOAST
+     ========================================================================== -->
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/201018177033" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="تواصل عبر واتساب">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Floating Cart Button -->
+  <button class="cart-float-btn" id="cartOpenBtn" aria-label="عرض قائمة الطلب">
+    <i class="fa-solid fa-basket-shopping"></i>
+    <span class="cart-badge" id="cartCount">0</span>
+  </button>
+
+  <!-- Cart Drawer -->
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-cookie-bite"></i> طلبك الحالي</h3>
+      <button class="close-btn" id="cartCloseBtn" style="color:#fff;" aria-label="إغلاق السلة"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-body" id="cartItemsContainer">
+      <div class="cart-empty">طلبك فارغ حالياً.<br>اختر حلاوتك المفضلة من المنيو! 🍫</div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>الإجمالي:</span>
+        <span id="cartTotalText">0 ج.م</span>
+      </div>
+      <form class="cart-form" id="cartOrderForm">
+        <input type="text" id="orderCustomerName" placeholder="اسمك الكريم (مطلوب)" required />
+        <input type="tel" id="orderCustomerPhone" placeholder="رقم هاتفك للتواصل (مطلوب)" required />
+        <input type="text" id="orderCustomerAddress" placeholder="عنوان التوصيل (اختياري)" />
+        <button type="submit" class="btn btn-whatsapp-send"><i class="fa-brands fa-whatsapp"></i> إرسال الطلب عبر واتساب</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check" style="color:var(--gold-accent);"></i>
+    <span id="toastMsg">تمت إضافة الحلوى إلى طلبك 🍫</span>
+  </div>
+
+  <!-- ==========================================================================
+     10. JAVASCRIPT LOGIC
+     ========================================================================== -->
+  <script>
+    /* --------------------------------------------------------------------------
+       1. DATA STRUCTURE (PANCAKES, ADDONS, WAFFLES)
+       -------------------------------------------------------------------------- */
+    const PANCAKES = [
+      { id: 'p1', name: 'ميني بان كيك شوكولاتة', price: 40, desc: '10 قطع طازجة غنية بصوص الشوكولاتة اللذيذ', img: 'https://images.unsplash.com/photo-1598214886806-c87b84b7078b?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p2', name: 'ميني بان كيك وايت', price: 40, desc: '10 قطع مغطاة بالشوكولاتة البيضاء الكريمية الفاخرة', img: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p3', name: 'ميني بان كيك لوتس', price: 50, desc: '10 قطع مع صوص اللوتس الفاخر وفتات بسكويت اللوتس', img: 'https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p4', name: 'ميني بان كيك كيندر', price: 50, desc: '10 قطع غارقة في صوص الكيندر الشهير المحبب للجميع', img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p5', name: 'ميني بان كيك كراميل', price: 40, desc: '10 قطع بصوص الكراميل الذهبي الناعم والغني', img: 'https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p6', name: 'ميني بان كيك فراولة', price: 40, desc: '10 قطع بصوص الفراولة الطبيعي المنعش', img: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p7', name: 'ميني بان كيك توت', price: 40, desc: '10 قطع مع صوص التوت البري اللذيذ والمميز', img: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p8', name: 'ميكس نوتيلا ووايت', price: 40, desc: '10 قطع تجمع بين النوتيلا الغنية والشوكولاتة البيضاء', img: 'https://images.unsplash.com/photo-1598214886806-c87b84b7078b?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p9', name: 'ميكس نوتيلا ولوتس', price: 40, desc: '10 قطع بمزيج رائع من النوتيلا وصوص اللوتس', img: 'https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p10', name: 'ميكس نوتيلا وكيندر', price: 40, desc: '10 قطع لعشاق النوتيلا مع صوص الكيندر اللذيذ', img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p11', name: 'ميكس وايت ولوتس', price: 40, desc: '10 قطع بمزيج الشوكولاتة البيضاء واللوتس المقرمش', img: 'https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p12', name: 'ميكس وايت وكيندر', price: 40, desc: '10 قطع بصوص الوايت شوكليت مع الكيندر الغني', img: 'https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p13', name: 'ميكس لوتس وكيندر', price: 50, desc: '10 قطع فاخرة تجمع بين نكهتي اللوتس والكيندر', img: 'https://images.unsplash.com/photo-1506084868230-bb9d95c24759?auto=format&fit=crop&q=80&w=600' },
+      { id: 'p14', name: 'كاب ميني بان كيك الخاص', price: 50, desc: 'قطع ميني بان كيك مع موز ومكسرات وشوكولاتة فاخرة في كوب', img: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&q=80&w=600' },
+    ];
+
+    const ADDONS = [
+      { id: 'a1', name: 'إضافة صوص', price: 10 },
+      { id: 'a2', name: 'قطع أوريو', price: 10 },
+      { id: 'a3', name: 'قطع تويكز', price: 10 },
+      { id: 'a4', name: 'قطع هوموز', price: 10 },
+      { id: 'a5', name: 'مكسرات مشكلة', price: 10 },
+      { id: 'a6', name: 'شرائح موز طازج', price: 15 },
+      { id: 'a7', name: 'شرائح تفاح طازج', price: 15 },
+      { id: 'a8', name: 'قطع فراولة طازجة', price: 15 },
+      { id: 'a9', name: 'قطع مانجا طازجة', price: 15 },
+      { id: 'a10', name: 'قطع كيت كات', price: 20 }
+    ];
+
+    const WAFFLES = [
+      { id: 'w1', name: 'وافل نوتيلا', sandwich: 30, open: 50, bestseller: true },
+      { id: 'w2', name: 'وافل وايت', sandwich: 30, open: 50, bestseller: false },
+      { id: 'w3', name: 'وافل لوتس', sandwich: 35, open: 60, bestseller: true },
+      { id: 'w4', name: 'وافل كيندر', sandwich: 40, open: 70, bestseller: false },
+      { id: 'w5', name: 'وافل فيروشيه', sandwich: 40, open: 70, bestseller: false },
+      { id: 'w6', name: 'وافل توت', sandwich: 30, open: 50, bestseller: false },
+      { id: 'w7', name: 'وافل فراولة', sandwich: 30, open: 50, bestseller: false },
+      { id: 'w8', name: 'وافل كراميل', sandwich: 30, open: 50, bestseller: false },
+      { id: 'w9', name: 'وافل ميكس نوتيلا ووايت', sandwich: 30, open: 50, bestseller: false },
+      { id: 'w10', name: 'وافل ميكس نوتيلا ولوتس', sandwich: 35, open: 60, bestseller: true },
+      { id: 'w11', name: 'وافل ميكس نوتيلا وكيندر', sandwich: 40, open: 60, bestseller: false },
+      { id: 'w12', name: 'وافل ميكس نوتيلا وفيروشيه', sandwich: 40, open: 60, bestseller: false },
+      { id: 'w13', name: 'وافل ميكس وايت ولوتس', sandwich: 40, open: 60, bestseller: false },
+      { id: 'w14', name: 'وافل ميكس وايت وكيندر', sandwich: 40, open: 60, bestseller: false },
+      { id: 'w15', name: 'وافل ميكس وايت وفيروشيه', sandwich: 40, open: 60, bestseller: false },
+      { id: 'w16', name: 'وافل ميكس كيندر وفيروشيه', sandwich: 40, open: 60, bestseller: false },
+      { id: 'w17', name: 'وافل فورسيزون', sandwich: null, open: 60, bestseller: true },
+      { id: 'w18', name: 'فتة وافل (موز + مكسرات + شوكولاتة)', sandwich: null, open: 60, bestseller: true }
+    ];
+
+    /* --------------------------------------------------------------------------
+       2. RENDER MENU ITEMS
+       -------------------------------------------------------------------------- */
+    function renderMenu() {
+      // 1. Render Pancakes
+      const pancakeGrid = document.getElementById('pancakeGrid');
+      pancakeGrid.innerHTML = PANCAKES.map(item => `
+        <div class="menu-card">
+          <img src="${item.img}" alt="${item.name}" loading="lazy" class="menu-card-img" />
+          <div class="menu-card-body">
+            <div>
+              <h3 class="menu-card-title">${item.name}</h3>
+              <p class="menu-card-desc">${item.desc}</p>
+            </div>
+            <div class="menu-card-footer">
+              <span class="price">${item.price} جنيه</span>
+              <button class="add-to-cart-btn" onclick="addToCart('${item.name}', ${item.price})" aria-label="أضف ${item.name} للطلب">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+
+      // 2. Render Addons
+      const addonsGrid = document.getElementById('addonsGrid');
+      addonsGrid.innerHTML = ADDONS.map(addon => `
+        <div class="addon-card" onclick="addToCart('${addon.name}', ${addon.price})">
+          <div class="addon-info">
+            <h4>${addon.name}</h4>
+            <span>+${addon.price} جنيه</span>
+          </div>
+          <button class="add-to-cart-btn" aria-label="أضف ${addon.name}">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      `).join('');
+
+      // 3. Render Waffle Table
+      const waffleTableBody = document.getElementById('waffleTableBody');
+      waffleTableBody.innerHTML = WAFFLES.map(item => `
+        <tr>
+          <td>
+            <div class="waffle-title">
+              <span>${item.name}</span>
+              ${item.bestseller ? '<span class="badge-bestseller">الأكثر طلباً 🔥</span>' : ''}
+            </div>
+          </td>
+          <td>${item.sandwich ? `${item.sandwich} جنيه` : '<span style="color:#aaa;">-</span>'}</td>
+          <td>${item.open ? `${item.open} جنيه` : '<span style="color:#aaa;">-</span>'}</td>
+          <td>
+            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+              ${item.sandwich ? `<button class="btn btn-secondary waffle-btn" onclick="addToCart('${item.name} (ساندوتش)', ${item.sandwich})">+ ساندوتش</button>` : ''}
+              ${item.open ? `<button class="btn btn-primary waffle-btn" onclick="addToCart('${item.name} (مفتوح)', ${item.open})">+ مفتوح</button>` : ''}
+            </div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    /* --------------------------------------------------------------------------
+       3. INTERACTIVE CART & WHATSAPP GENERATION
+       -------------------------------------------------------------------------- */
+    let cart = [];
+
+    function addToCart(name, price) {
+      cart.push({ id: Date.now(), name, price });
+      updateCartUI();
+      showToast(`تمت إضافة "${name}" إلى طلبك 🍫`);
+    }
+
+    function removeFromCart(id) {
+      cart = cart.filter(item => item.id !== id);
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const cartCount = document.getElementById('cartCount');
+      const cartItemsContainer = document.getElementById('cartItemsContainer');
+      const cartTotalText = document.getElementById('cartTotalText');
+
+      cartCount.textContent = cart.length;
+
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<div class="cart-empty">طلبك فارغ حالياً.<br>اختر حلاوتك المفضلة من المنيو! 🍫</div>';
+        cartTotalText.textContent = '0 ج.م';
+        return;
+      }
+
+      let total = 0;
+      cartItemsContainer.innerHTML = cart.map(item => {
+        total += item.price;
+        return `
+          <div class="cart-item">
+            <div>
+              <div class="cart-item-title">${item.name}</div>
+              <div class="cart-item-price">${item.price} جنيه</div>
+            </div>
+            <button class="cart-item-remove" onclick="removeFromCart(${item.id})" aria-label="حذف"><i class="fa-solid fa-trash-can"></i></button>
+          </div>
+        `;
+      }).join('');
+
+      cartTotalText.textContent = `${total} ج.م`;
+    }
+
+    // Cart Drawer Toggle
+    const cartDrawer = document.getElementById('cartDrawer');
+    document.getElementById('cartOpenBtn').addEventListener('click', () => cartDrawer.classList.add('open'));
+    document.getElementById('cartCloseBtn').addEventListener('click', () => cartDrawer.classList.remove('open'));
+
+    // Submit Order via WhatsApp
+    document.getElementById('cartOrderForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      if (cart.length === 0) {
+        alert('يرجى اختيار عنصر واحد على الأقل من المنيو قبل إرسال الطلب.');
+        return;
+      }
+
+      const name = document.getElementById('orderCustomerName').value.trim();
+      const phone = document.getElementById('orderCustomerPhone').value.trim();
+      const address = document.getElementById('orderCustomerAddress').value.trim();
+
+      let orderText = `*مرحباً Sweets Area! أرغب في طلب جديد 🍫*\n\n`;
+      orderText += `*الاسم:* ${name}\n`;
+      orderText += `*رقم الهاتف:* ${phone}\n`;
+      if (address) orderText += `*العنوان / ملاحظات:* ${address}\n`;
+      orderText += `\n*تفاصيل الطلب:*\n`;
+
+      let total = 0;
+      cart.forEach((item, index) => {
+        orderText += `${index + 1}. ${item.name} — *${item.price} ج.م*\n`;
+        total += item.price;
+      });
+
+      orderText += `\n*الإجمالي المطلوب:* *${total} جنيه مصري*\n`;
+      orderText += `\nشكراً لكم، بانتظار تأكيد الطلب!`;
+
+      const encodedMessage = encodeURIComponent(orderText);
+      window.open(`https://wa.me/201018177033?text=${encodedMessage}`, '_blank');
+    });
+
+    // Toast Message
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    /* --------------------------------------------------------------------------
+       4. TABS & MENU SWITCHING
+       -------------------------------------------------------------------------- */
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.menu-content').forEach(c => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetTab = btn.getAttribute('data-tab');
+        document.getElementById(`tab-${targetTab}`).classList.add('active');
+      });
+    });
+
+    /* --------------------------------------------------------------------------
+       5. GALLERY LIGHTBOX
+       -------------------------------------------------------------------------- */
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    let currentImgIndex = 0;
+    const gallerySources = Array.from(galleryItems).map(item => item.getAttribute('data-src'));
+
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        currentImgIndex = index;
+        openLightbox(gallerySources[currentImgIndex]);
+      });
+    });
+
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightbox.classList.add('active');
+    }
+
+    document.getElementById('lightboxClose').addEventListener('click', () => {
+      lightbox.classList.remove('active');
+    });
+
+    document.getElementById('lightboxNext').addEventListener('click', () => {
+      currentImgIndex = (currentImgIndex + 1) % gallerySources.length;
+      lightboxImg.src = gallerySources[currentImgIndex];
+    });
+
+    document.getElementById('lightboxPrev').addEventListener('click', () => {
+      currentImgIndex = (currentImgIndex - 1 + gallerySources.length) % gallerySources.length;
+      lightboxImg.src = gallerySources[currentImgIndex];
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) lightbox.classList.remove('active');
+    });
+
+    /* --------------------------------------------------------------------------
+       6. MOBILE MENU & STICKY HEADER
+       -------------------------------------------------------------------------- */
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const openBtn = document.getElementById('menuOpenBtn');
+    const closeBtn = document.getElementById('menuCloseBtn');
+
+    openBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('open');
+      mobileOverlay.classList.add('open');
+    });
+
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      mobileOverlay.classList.remove('open');
+    }
+
+    closeBtn.addEventListener('click', closeMobileMenu);
+    mobileOverlay.addEventListener('click', closeMobileMenu);
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+
+    /* --------------------------------------------------------------------------
+       7. CONTACT FORM DIRECT WHATSAPP SENDER
+       -------------------------------------------------------------------------- */
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const phone = document.getElementById('contactPhone').value.trim();
+      const msg = document.getElementById('contactMessage').value.trim();
+
+      const text = `*استفسار جديد من موقع Sweets Area*\n\n*الاسم:* ${name}\n*الهاتف:* ${phone}\n*الرسالة:* ${msg}`;
+      window.open(`https://wa.me/201018177033?text=${encodeURIComponent(text)}`, '_blank');
+    });
+
+    /* --------------------------------------------------------------------------
+       8. SCROLL REVEAL (INTERSECTION OBSERVER)
+       -------------------------------------------------------------------------- */
+    const revealElements = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealElements.forEach(el => observer.observe(el));
+
+    /* --------------------------------------------------------------------------
+       9. LANGUAGE TOGGLE PLACEHOLDER
+       -------------------------------------------------------------------------- */
+    document.getElementById('langToggle').addEventListener('click', () => {
+      showToast("خدمة اللغة الإنجليزية (English Version) ستتوفر قريباً! 🌍");
+    });
+
+    // Initialize Menu on Load
+    renderMenu();
+  </script>
+</body>
+</html>
