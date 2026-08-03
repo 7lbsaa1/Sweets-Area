@@ -3,180 +3,460 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تم إيقاف الموقع - Sweets-Area</title>
+    <title>Sweets-Area | تم إيقاف الموقع</title>
     
-    <!-- خطوط جوجل (Cairo) -->
+    <!-- خط Tajawal من Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     
-    <!-- مكتبة أيقونات Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- مكتبة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
+        /* ==========================================
+           1. إعدادات عامة ومتغيرات الألوان (Variables)
+        ========================================== */
+        :root {
+            --bg-gradient: linear-gradient(135deg, #090a0f 0%, #121622 50%, #0c0e17 100%);
+            --glass-bg: rgba(255, 255, 255, 0.04);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+            --fb-blue: #1877F2;
+            --fb-glow: rgba(24, 119, 242, 0.45);
+            --text-primary: #ffffff;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --font-main: 'Tajawal', sans-serif;
+        }
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Cairo', sans-serif;
+            font-family: var(--font-main);
         }
 
-        body {
-            background: linear-gradient(135deg, #1e1e2f, #12121c);
-            color: #ffffff;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .container {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px 30px;
-            text-align: center;
-            max-width: 500px;
+        body, html {
             width: 100%;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-        }
-
-        /* الصورة الرئيسية */
-        .main-image-container {
+            min-height: 100vh;
+            background: var(--bg-gradient);
+            color: var(--text-primary);
+            overflow-x: hidden;
             position: relative;
-            width: 160px;
-            height: 160px;
-            margin: 0 auto 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        .main-image {
+        /* ==========================================
+           2. الخلفية والدوائر الضبابية (Blur Orbs)
+        ========================================== */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .blur-orb {
+            position: fixed;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.35;
+            z-index: 0;
+            animation: orbFloat 15s infinite alternate ease-in-out;
+        }
+
+        .orb-1 {
+            width: 450px;
+            height: 450px;
+            background: #1877F2;
+            top: -10%;
+            right: -5%;
+        }
+
+        .orb-2 {
+            width: 500px;
+            height: 500px;
+            background: #7928CA;
+            bottom: -15%;
+            left: -10%;
+            animation-duration: 20s;
+            animation-delay: -5s;
+        }
+
+        /* ==========================================
+           3. المحتوى الرئيسي والبطاقة الزجاجية
+        ========================================== */
+        .wrapper {
+            position: relative;
+            z-index: 10;
+            width: 100%;
+            max-width: 650px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            margin: auto 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .glass-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 28px;
+            padding: 48px 36px;
+            text-align: center;
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            width: 100%;
+            animation: fadeScaleIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            opacity: 0;
+            transform: scale(0.95);
+        }
+
+        /* ==========================================
+           4. الصورة الرئيسية
+        ========================================== */
+        .image-container {
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 28px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            animation: float 6s ease-in-out infinite;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .image-container:hover {
+            transform: scale(1.08) translateY(-5px);
+            box-shadow: 0 20px 45px rgba(24, 119, 242, 0.3);
+        }
+
+        .image-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             border-radius: 50%;
-            border: 4px solid #e74c3c;
-            box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
+            display: block;
         }
 
-        /* شارة التنبيه */
-        .status-badge {
-            display: inline-block;
-            background: #e74c3c;
-            color: #fff;
-            padding: 6px 16px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
+        /* ==========================================
+           5. النصوص
+        ========================================== */
+        .glass-card h1 {
+            font-size: clamp(1.6rem, 4vw, 2.1rem);
+            font-weight: 800;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
         }
 
-        h1 {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            line-height: 1.4;
-            color: #f1f1f1;
+        .glass-card p {
+            color: var(--text-secondary);
+            font-size: clamp(0.95rem, 2.5vw, 1.08rem);
+            line-height: 1.8;
+            margin-bottom: 36px;
+            font-weight: 400;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
-        p.subtitle {
-            color: #aaaaaa;
-            font-size: 0.95rem;
-            margin-bottom: 30px;
-        }
-
-        /* الشعار السفلي */
-        .logo-container {
-            margin: 25px 0;
-        }
-
-        .bottom-logo {
-            max-height: 70px;
-            width: auto;
-            border-radius: 8px;
-            opacity: 0.9;
-        }
-
-        /* قسم التواصل */
-        .contact-section {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 25px;
-            margin-top: 20px;
-        }
-
-        .contact-section p {
-            font-size: 0.95rem;
-            margin-bottom: 15px;
-            color: #dddddd;
-        }
-
-        .fb-btn {
+        /* ==========================================
+           6. زر التواصل عبر فيسبوك
+        ========================================== */
+        .btn-facebook {
+            position: relative;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            background: #1877f2;
+            gap: 12px;
+            background: var(--fb-blue);
             color: #ffffff;
             text-decoration: none;
-            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 16px 36px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px var(--fb-glow);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .btn-facebook i {
+            font-size: 1.4rem;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-facebook:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 15px 35px rgba(24, 119, 242, 0.65);
+            background: #166fe5;
+        }
+
+        .btn-facebook:hover i {
+            transform: rotate(-8deg) scale(1.1);
+        }
+
+        .btn-facebook:active {
+            transform: translateY(0) scale(0.98);
+        }
+
+        /* تأثير Ripple للزر */
+        .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+
+        /* ==========================================
+           7. تذييل الصفحة (Footer)
+        ========================================== */
+        footer {
+            text-align: center;
+            padding: 24px 0 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            opacity: 0;
+            animation: fadeIn 1s 0.5s forwards;
+        }
+
+        .footer-logo {
+            width: 50px;
+            height: 50px;
             border-radius: 12px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(24, 119, 242, 0.3);
+            object-fit: cover;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
         }
 
-        .fb-btn:hover {
-            background: #155db2;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(24, 119, 242, 0.4);
+        .footer-logo:hover {
+            transform: scale(1.1);
         }
 
-        .fb-btn i {
-            font-size: 1.2rem;
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            line-height: 1.6;
         }
 
-        /* تحسينات للشاشات الصغيرة */
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 1.25rem;
+        /* ==========================================
+           8. الحركات والإنميشن (Keyframes)
+        ========================================== */
+        @keyframes orbFloat {
+            0% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(40px, 30px) scale(1.1); }
+            100% { transform: translate(-30px, -20px) scale(0.95); }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes fadeScaleIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.92) translateY(20px);
             }
-            .container {
-                padding: 30px 20px;
+            100% {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+
+        /* ==========================================
+           9. التجاوب مع الشاشات الصغيرة
+        ========================================== */
+        @media (max-width: 480px) {
+            .glass-card {
+                padding: 36px 22px;
+                border-radius: 22px;
+            }
+
+            .image-container {
+                width: 120px;
+                height: 120px;
+                margin-bottom: 22px;
+            }
+
+            .btn-facebook {
+                width: 100%;
+                padding: 15px 24px;
+                font-size: 1rem;
+            }
+
+            .glass-card p {
+                max-width: 100%;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <!-- الصورة الرئيسية -->
-        <div class="main-image-container">
-            <img class="main-image" src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/485888488_122154354674446895_8888565562348049308_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF3qyPZixcVLfBKPPKdDNntXdrupThXxWZd2u6lOFfFZoyfU8jTy2Zsx4ImHhMZ_7Y6O8-ummB1nfga7abjqOVk&_nc_ohc=KEp_4V-C_nQQ7kNvwHsPt2y&_nc_oc=AdovlhBse5a7euwMnwV_obOmWBmmD2CyyYiSY3Xb-tp-JkUvOAK6gTeSJJRES9pfoA0&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=qXfKQlxQ-nr_rUu3bwQDdQ&_nc_ss=7b2a8&oh=00_AQG9fuiHMvW2KtohLztSQdmZy_2kChUYvB8u1LV0A9nP6w&oe=6A75FCB2" alt="Sweets Area">
-        </div>
+    <!-- الدوائر الخلفية الضبابية -->
+    <div class="blur-orb orb-1"></div>
+    <div class="blur-orb orb-2"></div>
 
-        <!-- حالة الموقع -->
-        <span class="status-badge"><i class="fa-solid fa-lock"></i> موقع مغلق</span>
-        
-        <!-- الرسالة الرئيسية -->
-        <h1>تم إيقاف موقع Sweets-Area</h1>
-        <p class="subtitle">❤️تم إيقاف تشغيل هذا الموقع مؤقتاً بواسطة الأدمن</p>
+    <!-- شبكة الجزيئات المتحركة (Canvas) -->
+    <canvas id="particles-canvas"></canvas>
 
-        <!-- اللوغو أسفل الصورة/النص -->
-        <div class="logo-container">
-            <img class="bottom-logo" src="toplogo1.jpg" alt="Logo">
-        </div>
+    <!-- الحاوية الرئيسية -->
+    <div class="wrapper">
+        <main class="main-content">
+            <div class="glass-card">
+                <!-- الصورة الرئيسية -->
+                <div class="image-container">
+                    <img src="https://scontent.fcai19-7.fna.fbcdn.net/v/t39.30808-6/485888488_122154354674446895_8888565562348049308_n.jpg?stp=dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=103&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF3qyPZixcVLfBKPPKdDNntXdrupThXxWZd2u6lOFfFZoyfU8jTy2Zsx4ImHhMZ_7Y6O8-ummB1nfga7abjqOVk&_nc_ohc=KEp_4V-C_nQQ7kNvwHsPt2y&_nc_oc=AdovlhBse5a7euwMnwV_obOmWBmmD2CyyYiSY3Xb-tp-JkUvOAK6gTeSJJRES9pfoA0&_nc_zt=23&_nc_ht=scontent.fcai19-7.fna&_nc_gid=qXfKQlxQ-nr_rUu3bwQDdQ&_nc_ss=7b2a8&oh=00_AQG9fuiHMvW2KtohLztSQdmZy_2kChUYvB8u1LV0A9nP6w&oe=6A75FCB2" alt="Sweets-Area Logo" onerror="this.src='https://via.placeholder.com/150/1e293b/ffffff?text=Sweets-Area'">
+                </div>
 
-        <!-- الاستفسار وزر فيسبوك -->
-        <div class="contact-section">
-            <p>للاستفسار والتواصل مع الإدارة من خلال:</p>
-            <a href="https://www.facebook.com/profile.php?id=61584178882412&locale=ar_AR" target="_blank" class="fb-btn">
-                <i class="fa-brands fa-facebook-f"></i>
-                <span>صفحتنا على فيسبوك</span>
-            </a>
-        </div>
+                <!-- النصوص -->
+                <h1>تم إيقاف موقع Sweets-Area</h1>
+                <p>
+                    تم إيقاف الموقع بواسطة الإدارة.<br>
+                    إذا كنت ترغب في الاستفسار، يمكنك التواصل معنا عبر صفحتنا الرسمية على فيسبوك.
+                </p>
+
+                <!-- زر فيسبوك -->
+                <a href="https://www.facebook.com/profile.php?id=61584178882412&locale=ar_AR" target="_blank" rel="noopener noreferrer" class="btn-facebook" id="fbButton">
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>التواصل عبر فيسبوك</span>
+                </a>
+            </div>
+        </main>
+
+        <!-- التذييل والشعار -->
+        <footer>
+            <img src="toplogo1.jpg" alt="Sweets-Area Small Logo" class="footer-logo" onerror="this.style.display='none'">
+            <p>
+                © 2026 Sweets-Area<br>
+                جميع الحقوق محفوظة.
+            </p>
+        </footer>
     </div>
 
+    <!-- جافاسكربت للتأثيرات (Particles + Ripple) -->
+    <script>
+        // ==========================================
+        // 1. تأثير Ripple عند الضغط على الزر
+        // ==========================================
+        const fbButton = document.getElementById('fbButton');
+
+        fbButton.addEventListener('click', function (e) {
+            const rect = this.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const circle = document.createElement('span');
+            circle.classList.add('ripple');
+            circle.style.left = `${x}px`;
+            circle.style.top = `${y}px`;
+
+            this.appendChild(circle);
+
+            setTimeout(() => {
+                circle.remove();
+            }, 600);
+        });
+
+        // ==========================================
+        // 2. حركة الجزيئات (Particles Animation)
+        // ==========================================
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+
+        let width = canvas.width = window.innerWidth;
+        let height = canvas.height = window.innerHeight;
+
+        window.addEventListener('resize', () => {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+        });
+
+        const particles = [];
+        const particleCount = 35; // عدد الجزيئات خفيف وغير مزعج
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+
+            reset() {
+                this.x = Math.random() * width;
+                this.y = Math.random() * height;
+                this.size = Math.random() * 2 + 0.5;
+                this.speedX = (Math.random() - 0.5) * 0.4;
+                this.speedY = (Math.random() - 0.5) * 0.4;
+                this.opacity = Math.random() * 0.5 + 0.1;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x < 0 || this.x > width || this.y < 0 || this.y > height) {
+                    this.reset();
+                }
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(255, 255, 255, ${this.opacity})`;
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < particleCount; i++) {
+            particles.push(new Particle());
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, width, height);
+
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+            }
+
+            requestAnimationFrame(animateParticles);
+        }
+
+        animateParticles();
+    </script>
 </body>
 </html>
